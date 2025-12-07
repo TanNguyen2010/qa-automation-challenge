@@ -1,0 +1,28 @@
+{
+  "name": "qaautochallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test:devRegression": "cross-env runningEnv=dev npx playwright test --project=dev --grep @Regression",
+    "test:uatRegression": "cross-env runningEnv=uat npx playwright test --project=uat --grep @Regression",
+    "test:devSmoke": "cross-env runningEnv=dev npx playwright test --project=dev --grep @Smoke",
+    "test:uatSmoke": "cross-env runningEnv=uat npx playwright test --project=uat --grep @Smoke",
+    "test:prodSmoke": "cross-env runningEnv=prod npx playwright test --project=prod --grep @Smoke"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
+  }
+}

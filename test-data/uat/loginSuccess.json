@@ -1,0 +1,18 @@
+[
+  {
+    "caseId": "Login_01",
+    "tag": ["@Smoke", "@Regression"],
+    "caseName": "Verify user can login with valid username and password",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedError": ""
+  },
+  {
+    "caseId": "Login_02",
+    "tag": ["@Regression"],
+    "caseName": "Verify username field is not case-sensitive",
+    "username": "aDMin",
+    "password": "admin123",
+    "expectedError": ""
+  }
+]

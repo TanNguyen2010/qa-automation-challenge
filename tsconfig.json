@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+
+    "module": "commonjs",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@config/*":["config/*"],
+      "@fixtures/*":["fixtures/*"],
+      "@flows/*":["flows/*"],
+      "@pages/*":["pages/*"]
+    },
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "strict": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
+}

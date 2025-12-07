@@ -1,0 +1,42 @@
+[
+  {
+    "caseId": "Login_03",
+    "tag": ["@Regression"],
+    "caseName": "Verify password field is case-sensitvie",
+    "username": "Admin",
+    "password": "Admin123",
+    "expectedError": "Invalid credentials"
+  },
+  {
+    "caseId": "Login_04",
+    "tag": ["@Regression"],
+    "caseName": "Verify user cannot login with valid username and invalid password",
+    "username": "Admin",
+    "password": "wrongpass",
+    "expectedError": "Invalid credentials"
+  },
+  {
+    "caseId": "Login_05",
+    "tag": ["@Regression"],
+    "caseName": "Verify user cannot login with invalid username and valid password",
+    "username": "wrongUserName",
+    "password": "admin123",
+    "expectedError": "Invalid credentials"
+  },
+  {
+    "caseId": "Login_06",
+    "tag": ["@Regression"],
+    "caseName": "Verify user cannot login with invalid username and invalid password",
+    "username": "wrongUserName",
+    "password": "wrongpass",
+    "expectedError": "Invalid credentials"
+  },
+  {
+    "caseId": "Login_10",
+    "tag": ["@Regression"],
+    "caseName": "Verify user cannot login by special characters in username",
+    "username": "Admin@#$",
+    "password": "admin123",
+    "expectedError": "Invalid credentials"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "caseId": "Search_01",
+    "tag": ["@Smoke", "@Regression"],
+    "caseName": "Verify search with valid menu",
+    "data": "Time",
+    "expectedMenu": ["Time"]
+  },
+  {
+    "caseId": "Search_02",
+    "tag": ["@Regression"],
+    "caseName": "Verify search with partial match menu",
+    "data": "zz",
+    "expectedMenu": ["Buzz"]
+  },
+  {
+    "caseId": "Search_03",
+    "tag": ["@Smoke", "@Regression"],
+    "caseName": "Verify search field is case-sensitvie",
+    "data": "perforMANce",
+    "expectedMenu": ["Performance"]
+  },
+  {
+    "caseId": "Search_04",
+    "tag": ["@Regression"],
+    "caseName": "Verify search multiple match value",
+    "data": "en",
+    "expectedMenu": ["Recruitment", "Maintenance"]
+  },
+  {
+    "caseId": "Search_06",
+    "tag": ["@Regression"],
+    "caseName": "Verify search with invalid menu",
+    "data": "thisNotMenu",
+    "expectedMenu": []
+  },
+  {
+    "caseId": "Search_07",
+    "tag": ["@Smoke", "@Regression"],
+    "caseName": "Verify search with multiple words",
+    "data": "My Info",
+    "expectedMenu": ["My Info"]
+  },
+  {
+    "caseId": "Search_08",
+    "tag": ["@Regression"],
+    "caseName": "Verify search with valid menu and space",
+    "data": "Claim  ",
+    "expectedMenu": []
+  }
+]
